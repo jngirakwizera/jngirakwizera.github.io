@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+bod {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    height: 20px;
+    color: turquoise;
+    margin: 20px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: hotpink;
+}
+
+article {
+    padding: 20px;
+}
+
+i {
+    font-size: 3em;
+}
+
+@media(max-width:576px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+}
