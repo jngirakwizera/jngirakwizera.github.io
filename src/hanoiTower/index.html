@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" async></script>
+    <script async>
+        $(document).ready(function () {
+            // FYI, this is built with jQuery
+            'use strict';
+
+            $(document).ready(function () {
+                let $block = null;
+
+                $('.colum').click(function () {
+                    if ($block) {
+                        $(this).append($block);
+                        $block = null;
+                    } else {
+                        $block = $(this).children().last().detach();
+                    }
+                })
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="colum">
+            <div class="block1"></div>
+            <div class="block2"></div>
+            <div class="block3"></div>
+        </div>
+        <div class="colum"></div>
+        <div class="colum"></div>
+
+
+    </div>
+
+</body>
+
+</html>
